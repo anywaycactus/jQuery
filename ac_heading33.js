@@ -1,8 +1,7 @@
 <script>
-
 $(function () {
 
-    var allp_li = $('p');
+    var allp_li = document.getElementsByTagName('p');
 
     var allp_li_len = allp_li.length;
     var aryp_li = [];
@@ -120,5 +119,4 @@ $(function () {
     $('.h33s_dl').remove();
 
 });
-
 </script>
