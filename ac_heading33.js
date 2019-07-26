@@ -1,5 +1,3 @@
-<script>
-
 $(function () {
 
     var allp_li = $('p');
@@ -120,5 +118,3 @@ $(function () {
     $('.h33s_dl').remove();
 
 });
-
-</script>
