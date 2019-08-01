@@ -14,6 +14,17 @@ $(function () {
 
     for(var i = 0; i < allp_li_len - 1 ; i++){
 
+        if($(allp_li[i]).parent().attr('class') != "entry-content"){
+            allp_li.splice( i, 1 );
+
+        };
+
+    };
+
+    allp_li_len = allp_li.length;
+
+    for(var i = 0; i < allp_li_len - 1 ; i++){
+
         aryp_li.push(allp_li[i].innerHTML);
 
     };
