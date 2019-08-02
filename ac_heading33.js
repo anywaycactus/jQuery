@@ -1,4 +1,4 @@
-$(function () {
+﻿$(function () {
 
     var allp_li = $('.entry-content *');
 
@@ -10,7 +10,15 @@ $(function () {
 
     var allp_li_len = allp_li.length;
     var aryp_li = [];
-    var fix_p_li = [];
+    
+    for(var i = 0; i < allp_li_len - 1 ; i++){
+
+        if($(allp_li[i]).parent().attr('class') != "entry-content"){
+            allp_li.splice( i, 1 );
+
+        };
+
+    };
 
     for(var i = 0; i < allp_li_len - 1 ; i++){
 
@@ -47,7 +55,7 @@ $(function () {
                 flg_s = 1;
                 continue;
             }
-//*****************************************************************************************************
+
             else if(flg_c === 1){
 
             var h33style_02 = [];
@@ -129,7 +137,6 @@ $(function () {
             };
 
 };
-//*****************************************************************************************************
 
         };
 
